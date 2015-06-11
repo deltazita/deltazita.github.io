@@ -3,7 +3,7 @@ body {
   	font-family: verdana, arial, helvetica, sans-serif;
 	color: #000000;
 	background-color: lightgray;
-	background-image:url("auto.gif");
+/*	background-image:url("auto.gif"); */
 	opacity:1.0;
 	background-repeat:no-repeat;
 	background-position:center -10%;
