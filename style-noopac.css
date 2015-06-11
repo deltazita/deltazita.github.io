@@ -2,7 +2,7 @@ body {
 	font-size: medium;
   	font-family: verdana, arial, helvetica, sans-serif;
 	color: #000000;
-	background-color: lightyellow;
+	background-color: lightgray;
 	background-image:url("auto.gif");
 	opacity:1.0;
 	background-repeat:no-repeat;
