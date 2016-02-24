@@ -74,7 +74,7 @@
 <tbody><tr>
 <td bgcolor="#fefefe">
 <div class="box">
-<a href="#target">Target coverage</a> &nbsp;&nbsp; <a href="#uavs">UAV coordination</a> &nbsp;&nbsp; <a href="#connect">Connectivity restoration</a>
+<a href="#target">Target coverage</a> &nbsp;&nbsp; <a href="#connect">Connectivity restoration</a> &nbsp;&nbsp; <a href="#uavs">Drone coordination</a>
 </div>
 </td>
 </tr>
@@ -94,16 +94,16 @@ I fleet of devices with monitoring capabilities is used to cover specific points
 <table>
 <tr>
 <td>
-<img src="files/cov_example.png" width="340" height="340">
+<img src="files/cov_example.png" width="400" height="400">
 </td>
 <td>    
- <video id="video1" width="340" height="340" controls>
+ <video id="video1" width="400" height="400" controls>
    <source src="files/cov_con.ogg" type="video/ogg">
      Your browser does not support HTML5 video.
  </video>
 </td>
 <td>
- <video id="video2" width="340" height="340" controls>
+ <video id="video2" width="400" height="400" controls>
     <source src="files/cov_ener.ogg" type="video/ogg">
        Your browser does not support HTML5 video.
   </video>
@@ -112,35 +112,11 @@ I fleet of devices with monitoring capabilities is used to cover specific points
 <tr>    
 	<td>A snapshot of targets (red circles), sensors (dots) and a base station (left side)</td>
 	<td>Different groups of nodes are used to cover a set of targers.</td>
-	<td>Energy map of the nodes</td>
+	<td>Energy map of the nodes.</td>
 </tr>   
 </table>
 
 <p>For more information check <a href="http://rainbow.cs.unipi.gr/projects/sensors">http://rainbow.cs.unipi.gr/projects/sensors</a></p>
-
-<p id="uavs"><font size="4">UAV coordination</font></p>
-
-Unmanned Aerial Vehicles (UAVs) are used to monitor and follow mobile events. Since the UAVs consume a lot of energy a cost-efficient strategy is required. The UAVs communicate with each other to reduce energy consumption or to minimise the number of active drones. 
-<p></p>
-<table>
-<tr>
-<td>
- <video id="video3" width="340" controls>
-  <source src="http://uav-scheduling.gforge.inria.fr/las-real.ogv" type="video/ogg">
-    Your browser does not support HTML5 video.
- </video>
-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-	<td>UAVs are used to cover a number of mobile events. The UAVs are capable of alternating their altitude.</td>
-	<td></td>
-	<td></td>
-</tr>
-</table>
-
-<p>For more information you can check <a href="http://uav-scheduling.gforge.inria.fr">http://uav-scheduling.gforge.inria.fr</a></p>
 
 <p id="connect"><font size="4">Connectivity restoration</font></p>
 
@@ -154,15 +130,39 @@ The controlled mobility of mobile routers is exploited to help a base network in
     Your browser does not support HTML5 video.
  </video>
 </td>
-<td></td>
+<td><img src="files/christos.jpg" width="800"></td>
 <td></td>
 </tr>
 <tr>
 	<td>An experiment with 2 wired stations and a mobile router (right click to play).</td>
-	<td></td>
+	<td>An instance of an experiment while the destination location is not known (<a href="files/wamn14_plain.pdf">paper</a>)</td>
 	<td></td>
 </tr>
 </table>
+
+<p id="uavs"><font size="4">Drone coordination</font></p>
+
+Drones are used to monitor and follow mobile events. Since the drones consume a lot of energy a cost-efficient strategy is required. The drones communicate with each other to reduce energy consumption or to minimise the number of active drones. 
+<p></p>
+<table>
+<tr>
+<td><img src="files/centr-dron.svg" width="400"></td>
+<td><img src="files/centr-ener.svg" width="400"></td>
+<td>
+<video id="video3" width="400" controls>
+<source src="http://uav-scheduling.gforge.inria.fr/las-real.ogv" type="video/ogg">
+Your browser does not support HTML5 video.
+</video>
+</td>
+</tr>
+<tr>
+<td>Minimisation of the number of drones while covering static events.</td>
+<td>Minimisation of the total energy cost while covering static events.</td>
+<td>Drones are used to cover a number of mobile events. The drones are capable of alternating their altitude.</td>
+</tr>
+</table>
+
+<p>For more information you can check <a href="http://uav-scheduling.gforge.inria.fr">http://uav-scheduling.gforge.inria.fr</a></p>
 
 </div><!-- end main -->
 </td>
