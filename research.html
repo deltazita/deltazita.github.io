@@ -75,6 +75,7 @@
 <td bgcolor="#fefefe">
 <div class="box">
 <a href="#target">Target coverage</a> &nbsp;&nbsp; <a href="#connect">Connectivity restoration</a> &nbsp;&nbsp; <a href="#uavs">Drone coordination</a>
+&nbsp;&nbsp; <a href="#harv">RF-power harvesting</a>
 </div>
 </td>
 </tr>
@@ -89,7 +90,7 @@
 <td bgcolor="#fefefe">
 <div class="box"><!-- start main -->
 <p id="target"><font size="4">Target coverage</font></p>
-I fleet of devices with monitoring capabilities is used to cover specific points of interest. Since the devices have limited power resources, power-efficient algorithms are used to organise the nodes in groups and extend the network lifetime.
+I fleet of devices with monitoring capabilities is used to cover specific points of interest. Since the devices have limited power resources, power-efficient algorithms are used to organise the nodes in groups such that only one group is active at any time. This method can extend the network lifetime.
 <p></p>
 <table>
 <tr>
@@ -120,7 +121,7 @@ I fleet of devices with monitoring capabilities is used to cover specific points
 
 <p id="connect"><font size="4">Connectivity restoration</font></p>
 
-The controlled mobility of mobile routers is exploited to help a base network in trouble to provide a better service. The base network may be any access network or metropolitan network (including wired and wireless technologies). Troubles may come from an increase of unplanned traffic, a failure of the equipment, or a power outage. Mobile routers evaluate the quality of the links using a variety of measurements and they move accordingly.
+The controlled mobility of mobile routers is exploited to help a base network with connectivity problems to provide a better service. The base network may be any access network or metropolitan network (including wired and wireless technologies). The connectivity problems may happen due to an increased unplanned traffic, a failure of the equipment, or a power outage. Mobile routers evaluate the quality of the links using a variety of measurements and they move accordingly. Adaptive local decision making algorithms have been developed on real robots leading to a proof of concept.
 <p></p>
 <table>
 <tr>
@@ -142,7 +143,7 @@ The controlled mobility of mobile routers is exploited to help a base network in
 
 <p id="uavs"><font size="4">Drone coordination</font></p>
 
-Drones are used to monitor and follow mobile events. Since the drones consume a lot of energy a cost-efficient strategy is required. The drones communicate with each other to reduce energy consumption or to minimise the number of active drones. 
+Drones are used to monitor and follow mobile targets (events) without a priori knowledge of their movement or destination. Since the drones consume a lot of energy a cost-efficient strategy is required. The drones communicate with each other to reduce energy consumption or to minimise the number of active drones.
 <p></p>
 <table>
 <tr>
@@ -163,6 +164,10 @@ Your browser does not support HTML5 video.
 </table>
 
 <p>For more information you can check <a href="http://uav-scheduling.gforge.inria.fr">http://uav-scheduling.gforge.inria.fr</a></p>
+
+<p id="uavs"><font size="4">RF-power harvesting</font></p>
+
+We model an IoT network consisting of nodes with RF-power harvesting capabilities and dedicated chargers. The transmitted power, the harvesting efficiency, the packet data rate, the interference, the position of the transmitters and many other parameters are taken into account. Building upon this model, we find the minimum reimbursement time needed to cover the capital expenditures with decreased operating costs. More to come soon.
 
 </div><!-- end main -->
 </td>
