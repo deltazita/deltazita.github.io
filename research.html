@@ -79,6 +79,7 @@
 &nbsp;&nbsp; <a href="#uavs">Drone coordination</a>
 &nbsp;&nbsp; <a href="#harv">RF-power harvesting</a>
 &nbsp;&nbsp; <a href="#tsch">IEEE 802.15.4 TSCH</a>
+&nbsp;&nbsp; <a href="#lora">LoRa(WAN)</a>
 </div>
 </td>
 </tr>
@@ -180,6 +181,13 @@ We develop completely decentralized scheduling algorithms for IEEE 802.15.4 TSCH
 Example with 20 nodes:<br>
 <img src="files/tsch-scheduling.gif" width="600">
 
+<p id="lora"><font size="4">LoRa(WAN)</font></p>
+
+We develop algorithms to synchronize LoRa transmissions without adjusting the current LoRa MAC layer.
+The algorithms such as the one presented at <a href="files/giis2018.pdf">GIIS2018</a> allow parallel transmissions among nodes with different Spreading Factor configurations, while transmissions with the same configuration are scheduled at different time periods.
+In this way, we can get data from multiple nodes within the shortest amount of time while avoiding collisions. We intend to use this technique for data collection with drones.<br>
+
+<img src="files/drone_lora.png" width="600">
 
 </div><!-- end main -->
 </td>
